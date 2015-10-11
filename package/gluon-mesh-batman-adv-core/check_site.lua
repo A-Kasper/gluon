@@ -21,3 +21,7 @@ end
 
 need_boolean('mesh_on_wan', false)
 need_boolean('mesh_on_lan', false)
+
+if need_table('mesh_batman_adv', nil, false) then
+   need_number('mesh_batman_adv.gw_sel_class', false)
+end
